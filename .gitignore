@@ -7,3 +7,4 @@ master_thesis_unsupervised_learning/src/models/.*
 master_thesis_unsupervised_learning/src/.*
 /.*
 weather_forecasting/.*
+active_learning/jena_climate_2009_2016.csv
