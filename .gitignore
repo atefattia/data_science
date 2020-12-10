@@ -1,10 +1,10 @@
 collaborative_filtering/.*
 active_learning/.*
-decision_tree/.*
-credit_card_fraud_detection/.*
-master_thesis_unsupervised_learning/.*
-master_thesis_unsupervised_learning/src/models/.*
-master_thesis_unsupervised_learning/src/.*
-/.*
+decision_tree/.* 
+credit_card_fraud_detection/.* 
+master_thesis_unsupervised_learning/.* 
+master_thesis_unsupervised_learning/src/models/.* 
+master_thesis_unsupervised_learning/src/.* /.* 
 weather_forecasting/.*
-active_learning/jena_climate_2009_2016.csv
+weather_forecasting/jena_climate_2009_2016.csv
+/.*
