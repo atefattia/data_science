@@ -1,0 +1,7 @@
+matplotlib
+numpy
+Pillow
+opencv-python>=3.2
+imgaug
+torch
+torchvision

@@ -1,0 +1,61 @@
+* Task
+Given an image of a person the algorithm should tell which celebrity looks alike.
+
+* Dataset
+[[http://vis-www.cs.umass.edu/lfw/][Labeled Faces in the Wild]]
+
+- 13233 images
+- 5749 people
+- 1680 people with two or more images
+
+** others
+http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html
+
+https://susanqq.github.io/UTKFace/
+- consists of 20k+ face images in the wild (only single face in one image)
+- provides the correspondingly aligned and cropped faces
+- provides the corresponding landmarks (68 points)
+- images are labelled by age, gender, and ethnicity
+
+
+* GAN for feature extraction
+Can we train a GAN to map the images of the celebrities into a latent space in
+which we hopefully have values that represent e.g. hair length, hair color or
+face shape. It might not even be necessary to train this GAN since there should
+exist pre-trained GANs train on human faces.
+
+I know that GAN are normally used to generate new Images from a random
+seed. But this question [0] refers to papers that explain how to use
+GANs or more specific the discriminator of the GAN pair to obtain a
+latent space representation [1][2].
+
+This latent features can be computed for a new image and be compared to
+the latent values the known celebrities. I think this will be the hard
+part but maybe a NN can learn the mapping from face latent space to
+celebrity more easily with the provided data. Or non neural clustering
+or kNN approach might also work.
+
+[0] https://datascience.stackexchange.com/questions/17471/how-to-use-gan-for-unsupervised-feature-extraction-from-images
+
+[1] https://arxiv.org/abs/1511.06434
+Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks
+
+[2] https://arxiv.org/abs/1605.09782
+Adversarial Feature Learning
+
+** Pre-trained GANs
+*** StyleGAN
+https://github.com/NVlabs/stylegan 
+used in https://thispersondoesnotexist.com
+
+StyleGAN trained with CelebA-HQ dataset at 1024×1024.
+https://drive.google.com/uc?id=1MGqJl28pN4t7SAtSrPdSRJSQJqahkzUf
+
+example usage
+https://github.com/NVlabs/stylegan/blob/master/pretrained_example.py
+
+*** DCGAN
+https://github.com/soumith/dcgan.torch
+
+for faces (celeb-A dataset):
+https://github.com/soumith/lfs/raw/master/dcgan.torch/celebA_25_net_G.t7
