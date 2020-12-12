@@ -8,3 +8,5 @@ master_thesis_unsupervised_learning/src/.* /.*
 weather_forecasting/.*
 weather_forecasting/jena_climate_2009_2016.csv
 /.*
+natural_language_processing/.*
+reinforcement_learning/.*
