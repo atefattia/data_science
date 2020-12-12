@@ -11,3 +11,5 @@ weather_forecasting/jena_climate_2009_2016.csv
 natural_language_processing/.*
 reinforcement_learning/.*
 natural_language_processing/aclImdb/*
+shipping_traffic_anomaly_detection/.*
+face_recognition/.*
