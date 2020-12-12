@@ -1,15 +1,15 @@
-collaborative_filtering/.*
-active_learning/.*
-decision_tree/.* 
-credit_card_fraud_detection/.* 
-master_thesis_unsupervised_learning/.* 
-master_thesis_unsupervised_learning/src/models/.* 
-master_thesis_unsupervised_learning/src/.* /.* 
-weather_forecasting/.*
-weather_forecasting/jena_climate_2009_2016.csv
+08_collaborative_filtering/.*
+03_active_learning/.*
+01_decision_tree/.* 
+02_credit_card_fraud_detection/.* 
+07_master_thesis_unsupervised_learning/.* 
+07_master_thesis_unsupervised_learning/src/models/.* 
+07_master_thesis_unsupervised_learning/src/.* /.* 
+05_weather_forecasting/.*
+05_weather_forecasting/jena_climate_2009_2016.csv
 /.*
-natural_language_processing/.*
-reinforcement_learning/.*
-natural_language_processing/aclImdb/*
-shipping_traffic_anomaly_detection/.*
-face_recognition/.*
+09_natural_language_processing/.*
+10_reinforcement_learning/.*
+09_natural_language_processing/aclImdb/*
+04_shipping_traffic_anomaly_detection/.*
+06_face_recognition/.*
