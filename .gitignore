@@ -10,3 +10,4 @@ weather_forecasting/jena_climate_2009_2016.csv
 /.*
 natural_language_processing/.*
 reinforcement_learning/.*
+natural_language_processing/aclImdb/*
